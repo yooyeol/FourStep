@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="kr.co.dothome.fourstep.bowlingscore.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="회원등록"
+                android:textSize="15pt"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/signIdInput"
+                android:layout_centerHorizontal="true"
+                android:hint="ID"
+                android:layout_marginTop="70dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/signPassInput"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_below="@+id/signIdInput" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/signNameInput"
+                android:layout_centerHorizontal="true"
+                android:hint="이름"
+                android:layout_below="@+id/signPassInput" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/signPhoneInput"
+                android:layout_centerHorizontal="true"
+                android:hint="전화번호('-'제외)"
+                android:layout_below="@+id/signNameInput" />
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text=" 생년월일"
+                android:layout_marginTop="20dp"
+                android:layout_alignLeft="@+id/signPhoneInput"
+                android:layout_below="@+id/signPhoneInput"
+                android:textSize="10pt"/>
+
+            <TextView
+                android:id="@+id/textDatePick"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/signPhoneInput"
+                android:layout_alignTop="@+id/textDate"
+                android:layout_alignEnd="@+id/signPhoneInput"/>
+
+           <!-- <DatePicker
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:id="@+id/signBirthInput"
+                android:layout_centerHorizontal="true"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_below="@+id/textDate"/>-->
+
+            <Button
+                android:id="@+id/birthPickerBtn"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="날짜선택"
+                android:textSize="10pt"
+                android:layout_alignLeft="@+id/textDate"
+                android:layout_below="@+id/textDate"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
