@@ -19,6 +19,7 @@ public class SignUpButtonActivity extends Activity {
     int year, month, day, hour, minute;
 
     Button datePickBtn;
+    
 
     @Override
     public void onCreate(Bundle savedInstanceState){
